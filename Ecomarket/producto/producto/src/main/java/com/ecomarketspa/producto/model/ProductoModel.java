@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
+// este es un cambio
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
