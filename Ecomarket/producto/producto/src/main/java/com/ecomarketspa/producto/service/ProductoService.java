@@ -1,13 +1,14 @@
 package com.ecomarketspa.producto.service;
 
 
-import com.ecomarketspa.producto.model.ProductoModel;
-import com.ecomarketspa.producto.repository.ProductoRepository;
+import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-import java.util.Optional;
+import com.ecomarketspa.producto.model.ProductoModel;
+import com.ecomarketspa.producto.repository.ProductoRepository;
 
 @Service
 public class ProductoService {
@@ -49,7 +50,7 @@ public class ProductoService {
             }
             return productosRepository.save(actualizado);
         } else {
-            throw new RuntimeException("Producto no encontrado con ID: " + id);
+            throw new RuntimeException("Producto no encontrado con el  ID dadou: " + id);
         }
     }
 
